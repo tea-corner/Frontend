@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    background-color: #F5EE00;
+    background-image: url("../img/YellowAndGreyLogin_FHD_s.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
