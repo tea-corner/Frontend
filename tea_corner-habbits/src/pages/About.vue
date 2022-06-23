@@ -1,10 +1,13 @@
 <template>
-  <h3>About page</h3>
+  <h3><block-item/></h3>
 </template>
 
 <script>
+import blockItem from '@/components/BlockItem'
 export default {
-
+  components: {
+    blockItem
+  }
 }
 </script>
 
