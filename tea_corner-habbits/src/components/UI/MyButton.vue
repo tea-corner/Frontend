@@ -11,7 +11,7 @@
 <script>
 
 export default {
-    name: 'red-button',
+    name: 'my-button',
     
     props: {
         name: String

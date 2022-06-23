@@ -33,7 +33,7 @@
 
 
                     <div class="loginButtom">
-                        <red-button>Регистрация</red-button>
+                        <my-button">Регистрация</my-button>
                     </div>
 
                 </form>
@@ -58,8 +58,10 @@
 </template>
 
 <script>
+import MyButton from '../components/UI/MyButton.vue'
 
 export default {
+  components: { MyButton },
 }
 
 </script>

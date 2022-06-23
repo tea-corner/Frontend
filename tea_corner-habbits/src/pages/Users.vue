@@ -1,13 +1,15 @@
 <template>
     <div>
         <h1>Users</h1>
-        <red-button>SomethingName</red-button>
+        <my-button>SomethingName</my-button>
     </div>
 </template>
 
 <script>
+import MyButton from '../components/UI/MyButton.vue'
 
 export default {
+  components: { MyButton },
 
 }
 
