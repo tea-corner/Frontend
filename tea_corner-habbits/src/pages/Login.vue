@@ -33,7 +33,7 @@
 
 
                     <div class="loginButtom">
-                        <my-button">Регистрация</my-button>
+                        <my-button>Регистрация</my-button>
                     </div>
 
                 </form>

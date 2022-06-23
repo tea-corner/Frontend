@@ -1,7 +1,7 @@
 <template>
         
     <div>
-        <button class="redButton">
+        <button class="myButton">
             <slot></slot>
         </button>
     </div>
@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 
-.redButton {
+.myButton {
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding: 1rem;
