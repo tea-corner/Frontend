@@ -19,7 +19,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 12.4rem auto 40%;
-    grid-template-rows: 20% auto 7% 16%;
+    grid-template-rows: 7rem auto 7% 16%;
     grid-template-areas: "start GreyCol overLoginCol" "start GreyCol loginCol" "start none warning";
 }
 
