@@ -1,6 +1,7 @@
 import Main from '@/pages/Main';
 import Users from '@/pages/Users';
 import About from '@/pages/About';
+import LoginPage from '@/pages/Login';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -17,6 +18,11 @@ const routes = [
     {
         path: '/about',
         component: About
+    },
+
+    {
+        path: '/login',
+        component: LoginPage
     }
 ]
 
