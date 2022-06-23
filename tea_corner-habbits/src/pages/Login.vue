@@ -64,6 +64,7 @@ export default {
 </script>
 
 <style>
+@import url("../assets/fonts/Blender_Pro/stylesheet.css");
 
 html {
     font-size: 62.5%;
@@ -78,7 +79,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 2rem;
-    font-family: "Blender Pro", sans-serif;
+    font-family: "Blender Pro";
     font-weight: bold;
 }
 
@@ -103,7 +104,7 @@ p {
 .loginPageGrey p {
     /* margin-left: 12.4rem; */
     color: #00F0FF;
-    font-family: "Blender Pro", sans-serif;
+    font-family: "Blender Pro";
 }
 
 .loginBlock {
@@ -157,7 +158,7 @@ p {
 
 .loginArea input::placeholder,
 .passwordArea input::placeholder {
-    font-family: "Blender Pro", sans-serif;
+    font-family: "Blender Pro";
     font-weight: 700;
     color: black;
 }
@@ -169,11 +170,11 @@ p {
     padding-left: 11rem;
     padding-right: 11rem;
     border: 0rem;
-    font-family: "Blender Pro", sans-serif;
+    font-family: "Blender Pro";
     font-size: 2.4rem;
     font-weight: 700;
     color: white;
-    background: url("/Users/root1/Developments/Frontend/tea_corner-habbits/public/images/Red_buttom_SVG.svg") no-repeat;
+    background: url("../../public/images/Red_buttom_SVG.svg") no-repeat;
     background-size: cover;
     background-position: center center;
     width: auto;
