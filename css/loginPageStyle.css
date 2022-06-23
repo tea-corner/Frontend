@@ -18,9 +18,8 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 12.4rem auto 40%;
-    grid-template-rows: 7rem auto 7% 16%;
-    grid-template-areas: "start GreyCol overLoginCol" "start GreyCol loginCol" "start none warning";
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas: "GreyCol loginCol";
 }
 
 p {
@@ -28,8 +27,7 @@ p {
 }
 
 .loginPageGrey {
-    display: flex;
-    justify-content: flex-start;
+    text-align: center;
     font-size: 6.4rem;
     grid-column-start: GreyCol;
 }
@@ -41,9 +39,9 @@ p {
 }
 
 .loginBlock {
+    margin-top: 4rem;
     grid-area: loginCol;
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     text-align: center;
     font-style: bold;
@@ -60,14 +58,11 @@ p {
 }
 
 .warningBlock {
-    margin-top: 8rem;
-    grid-area: warning;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+    margin-top: 15%;
+    align-self: flex-end;
     font-size: 1.6rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .warningBlock b {
@@ -107,7 +102,7 @@ p {
     font-size: 2.4rem;
     font-weight: 700;
     color: white;
-    background: url("../img/Red_buttom_SVG.svg") no-repeat;
+    background: url("../svg/Red_buttom_SVG.svg") no-repeat;
     background-size: cover;
     background-position: center center;
     width: auto;
