@@ -33,7 +33,7 @@
 
 
                     <div class="loginButtom">
-                        <input type="submit" name="loginButt" id="loginButt" value="Вход">
+                        <red-button>Регистрация</red-button>
                     </div>
 
                 </form>
@@ -58,17 +58,14 @@
 </template>
 
 <script>
-export default {
 
+export default {
 }
+
 </script>
 
-<style>
+<style scoped>
 @import url("../assets/fonts/Blender_Pro/stylesheet.css");
-
-html {
-    font-size: 62.5%;
-}
 
 body {
     margin: 0px;
@@ -161,25 +158,6 @@ p {
     font-family: "Blender Pro";
     font-weight: 700;
     color: black;
-}
-
-.loginButtom input {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
-    border: 0rem;
-    font-family: "Blender Pro";
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: white;
-    background: url("../../public/images/Red_buttom_SVG.svg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: auto;
-    height: auto;
-    cursor: pointer;
 }
 
 </style>
