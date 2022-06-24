@@ -5,20 +5,36 @@
     <a href="" class="navLink" @click="$router.push('/')">Главная</a>
     <a href="" class="navLink" @click="$router.push('/login')">Данжи</a>
     <a href="" class="navLink" @click="$router.push('/users')">Инвентарь</a>
+    <balance :balance="balance" class="balance"></balance>
+    <chat></chat>
+    <sync></sync>
+    <profile></profile>
   </div>
   
 </template>
 
 <script>
-import Logo from './UI/Logo.vue'
+
+import Logo from '@/components/UI/Logo';
+import Balance from '@/components/UI/Balance';
+import Sync from '@/components/UI/Sync';
+import Chat from '@/components/UI/Chat';
+import Profile from '@/components/UI/Profile';
 
 export default {
-  components: { Logo },
-
+    components: {
+      Logo, Balance, Sync, Chat,  Profile
+    },
+    
+    data() {
+      return {
+        balance: 0
+      }
+    }
 }
 </script>
 
-<style>
+<style scoped>
 
 .navbar {
     height: 62px;
@@ -29,12 +45,13 @@ export default {
 }
 
 .navLink {
-    margin:15px;
+    margin-right:15px;
     text-decoration:none;
     color:inherit;
 }
 
 .logoText {
+    margin-right:15px;
     text-decoration:none;
     color:inherit; 
 }

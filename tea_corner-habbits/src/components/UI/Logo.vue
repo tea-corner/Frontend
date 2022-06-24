@@ -1,5 +1,5 @@
 <template>
-    <div class=logo>
+    <div class=logoItem>
         <img src="svg/tea.svg" alt="teaIcon" class="logoImg">
     </div>
 </template>
@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 
-.logo {
+.logoItem {
     display: flex;
 }
 

@@ -14,30 +14,6 @@
         </head>
 
         <body>
-        <header class="header">
-
-            <div class="container">
-
-            <img src="/svg/money.svg" alt="moneyIcon" class="moneyIcon">
-
-            <img src="/svg/dollar.svg" alt="dollarIcon" class="dollarIcon">
-
-            <button class="btnSyncIcon">
-                <img src="/svg/sync.svg" alt="syncIcon" class="syncIcon">
-            </button>
-
-            <button class="btnCommentIcon">
-                <img src="/svg/comment.svg" alt="commentIcon" class="commentIcon">
-            </button>
-
-            <button class="btnUserIcon">
-                <img src="/svg/user.svg" alt="userIcon" class="userIcon">
-            </button>
-
-            </div>
-
-        </header>
-
         <main>
 
             <section class="sectionMenuHero">
@@ -114,18 +90,15 @@
 
 <script>
 import NavBar from '../components/NavBar.vue';
-import Logo from '../components/UI/Logo.vue';
 
 export default {
     
     components: {
-        NavBar,
-        Logo
+        NavBar
     }
 
 }
-
-        NavBar</script>
+</script>
 
 <style>
 
