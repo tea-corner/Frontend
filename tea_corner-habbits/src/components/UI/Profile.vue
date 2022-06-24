@@ -1,6 +1,7 @@
 <template>
-     <button class="btnProfile">
-     </button>
+     <a href="" class="btnProfile">
+     <img src="svg/user.svg" alt="">
+     </a>
 </template>
 
 <script>
@@ -14,6 +15,5 @@ export default {
     display: flex;
     border: 0;
     margin-right: 15px;
-    background: url("../../../public/svg/user.svg");
 }
 </style>

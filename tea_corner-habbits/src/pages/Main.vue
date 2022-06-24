@@ -1,7 +1,5 @@
 <template>
     <div>
-        <nav-bar></nav-bar>
-
         <html lang="ru">
 
         <head>
@@ -14,6 +12,9 @@
         </head>
 
         <body>
+
+             <nav-bar></nav-bar>
+
         <main>
 
             <section class="sectionMenuHero">
@@ -101,5 +102,7 @@ export default {
 </script>
 
 <style>
-
+body {
+    margin: 0;
+}
 </style>

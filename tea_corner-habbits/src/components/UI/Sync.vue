@@ -1,19 +1,17 @@
 <template>
-     <button class="btnSyncIcon">
-     </button>
+  <a href="" class="btnSyncIcon">
+    <img src="svg/sync.svg" />
+  </a>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
 .btnSyncIcon {
-    display: flex;
-    border: 0;
-    margin-right: 15px;
-    background: url("../../../public/svg/comment.svg");
+  display: flex;
+  border: 0;
+  margin-right: 15px;
 }
 </style>

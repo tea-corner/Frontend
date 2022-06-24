@@ -1,23 +1,16 @@
 <template>
-    <div class=logoItem>
-        <img src="svg/tea.svg" alt="teaIcon" class="logoImg">
-    </div>
+  <div class="logoItem">
+    <img src="svg/tea.svg" alt="teaIcon" class="logoImg" />
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-
 .logoItem {
-    display: flex;
+  margin-left: 12px;
+  margin-right: 15px;
 }
-
-.logoImg {
-    padding: 15px;
-}
-
 </style>

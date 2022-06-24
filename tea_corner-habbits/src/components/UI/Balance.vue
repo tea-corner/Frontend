@@ -21,6 +21,7 @@ export default {
 .balance {
     display: flex;
     justify-content: center;
+    
 }
 
 .balanceText { 

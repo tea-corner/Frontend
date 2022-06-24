@@ -1,25 +1,23 @@
 <template>
-    <div class="chatContainer">
-        <button class="btnSyncIcon">
-        </button>
-    </div>
+  <div class="chatContainer">
+    <a href="" class="btnSyncIcon">
+      <img src="svg/comment.svg" alt="teaIcon" class="logoImg" />
+    </a>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
 .chatContainer {
-    display: flex;
-    justify-content: center;
-}
-.btnSyncIcon {
-    margin-right: 15px;
-    background: url("../../../public/svg/comment.svg");
-    background-size: contain;
-}
+  display: flex;
+  justify-content: center;
 
+}
+.logoImg {
+  display: flex;
+  
+}
 </style>
