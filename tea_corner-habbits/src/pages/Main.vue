@@ -1,108 +1,125 @@
 <template>
-    <div>
-        <html lang="ru">
-
-        <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tea Corner</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        </head>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/index.css" />
+      </head>
 
-        <body>
-
-             <nav-bar></nav-bar>
+      <body>
+        <nav-bar></nav-bar>
 
         <main>
-
-            <section class="sectionMenuHero">
-
+          <section class="sectionMenuHero">
             <div class="container">
-                <img src="/img/image 3.png" alt="photo" class="sectionMenuPhoto">
+              <div class="Hero">
+                <img
+                  src="/img/image 3.png"
+                  alt="photo"
+                  class="sectionMenuPhoto"
+                />
 
                 <h4 class="sectionMenuName">
-                Божедомов Даниил
-                @id 531h7kgkh15321ks
+                  Божедомов Даниил @id 531h7kgkh15321ks
                 </h4>
 
                 <div class="resourceHealth">
-                <img src="/svg/health.svg" alt="healthIcon" class="healthIcon">
-                <progress value="45" max="50" class="progressHealth"></progress>
-                <h6 class="dataHealth">45/50</h6>
+                  <img
+                    src="/svg/health.svg"
+                    alt="healthIcon"
+                    class="healthIcon"
+                  />
+                  <progress
+                    value="45"
+                    max="50"
+                    class="progressHealth"
+                  ></progress>
+                  <h6 class="dataHealth">45/50</h6>
                 </div>
-                
+
                 <div class="resourceExperience">
-                <img src="/svg/experience.svg" alt="experienceIcon" class="experienceIcon">
-                <progress value="11" max="50" class="progressExperience"></progress>
-                <h6 class="dataExperience">11/50</h6>
+                  <img
+                    src="/svg/experience.svg"
+                    alt="experienceIcon"
+                    class="experienceIcon"
+                  />
+                  <progress
+                    value="11"
+                    max="50"
+                    class="progressExperience"
+                  ></progress>
+                  <h6 class="dataExperience">11/50</h6>
                 </div>
+              </div>
+              <p class="menuHeroText">
+                Испытай себя, приняв челлендж от других игроков Открой доску
+                испытаний и выбери задание твоего уровня. Или может решишь
+                испытать себя, выбрав что-нибудь посложнее?
+              </p>
 
-                <p class="menuHeroText">
-                Испытай себя, приняв челлендж от других игроков
-        Открой доску испытаний и выбери задание твоего уровня. Или может решишь испытать себя, выбрав что-нибудь посложнее?
-                </p>
-
-                <button class="btnMenuHero">
-                Открыть доску
-                </button>
+              <button class="btnMenuHero">Открыть доску</button>
             </div>
+          </section>
 
-            </section>
-
-            <section class="sectionBlocks">
+          <section class="sectionBlocks">
             <div class="container">
-                <ul class="blocksList">
+              <ul class="blocksList">
                 <li class="blockItem">
-                    <h4 class="blockName">Привычки</h4>
-                    <div class="blockNewList">
-                    <button class="btnBlockAdd"> Добавить привычку </button>
-                    </div>
+                  <h4 class="blockName">Привычки</h4>
+                  <div class="blockNewList">
+                    <button class="btnBlockAdd">Добавить привычку</button>
+                  </div>
                 </li>
                 <li class="blockItem">
-                    <h4 class="blockName">Ежедневные дела</h4>
-                    <div class="blockNewList">
-                    <button class="btnBlockAdd"> Добавить ежедневную задачу </button>
-                    </div>
+                  <h4 class="blockName">Ежедневные дела</h4>
+                  <div class="blockNewList">
+                    <button class="btnBlockAdd">
+                      Добавить ежедневную задачу
+                    </button>
+                  </div>
                 </li>
                 <li class="blockItem">
-                    <h4 class="blockName">To-Do</h4>
-                    <div class="blockNewList">
-                    <button class="btnBlockAdd"> Добавить задачу </button>
-                    </div>
+                  <h4 class="blockName">To-Do</h4>
+                  <div class="blockNewList">
+                    <button class="btnBlockAdd">Добавить задачу</button>
+                  </div>
                 </li>
                 <li class="blockItem">
-                    <h4 class="blockName">Инвентарь</h4>
-                    <div class="blockNewList">
-                    
-                    </div>
+                  <h4 class="blockName">Инвентарь</h4>
+                  <div class="blockNewList"></div>
                 </li>
-                </ul>
+              </ul>
             </div>
-            </section>
+          </section>
         </main>
-
-        </body>
-
-        </html>
-    </div>
+      </body>
+    </html>
+  </div>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue';
+import NavBar from "../components/NavBar.vue";
 
 export default {
-    
-    components: {
-        NavBar
-    }
-
-}
+  components: {
+    NavBar,
+  },
+};
 </script>
 
 <style>
 body {
-    margin: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.resourceExperience {
+  display: flex;
+}
+.Hero {
+    display: flex;
 }
 </style>

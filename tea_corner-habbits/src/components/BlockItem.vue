@@ -1,14 +1,23 @@
 <template>
   <section class="sectionBlocks">
     <div class="container selectionContainer">
+      <h4 class="blockName">Привычки</h4>
+      <div class="blockNewList">
+        <button class="btnBlockAdd">Добавить привычку</button>
+        <div class="scrollText">
+          <ul>
+            <li>Привет</li>
+            <li>Привет1</li>
+            <li>Привет2</li>
+            <li>Привет2</li>
+
+            <li>Привет2</li>
+            <li>Привет2</li>
+          </ul>
+        </div>
+      </div>
+
       
-
-          <h4 class="blockName">Привычки</h4>
-          <div class="blockNewList">
-            <button class="btnBlockAdd">Добавить привычку</button>
-          </div>
-
-
     </div>
   </section>
 </template>
@@ -17,15 +26,33 @@
 </script>
 
 <style scoped>
-.iii {
-  display: flex;
+.scrollText {
+  overflow: auto;
+  padding-top: auto;
+  margin-left: 10px;
 }
 .btnBlockAdd {
-  width: 100%;
-  background-color: #00f0ff;
+  width: 35px;
+  margin-top: 10px;
+
+  margin-left: 10px;
+  width: 392px;
+
+  color: #757575;
+  border: 0;
+  background-color: #00dcea;
+
+  font-family: "Blender Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  align-items: center;
 }
 
 .sectionBlocks {
+  background: url('../../public/images/menuIMG.jpg');
   height: 810px;
 }
 
@@ -40,12 +67,12 @@
 }
 
 .blockNewList {
-  padding-bottom: 500px;
+  height: 604px;
+
+  width: 413px;
   margin-left: 12px;
-  background-color: #00f0ff;
-  margin-right: 24px;
-  width: 308px;
-  border: 4px solid black;
-  display: flex;
+  border: 0;
+  overflow: auto;
+  background: url("../../public/images/block.png");
 }
 </style>

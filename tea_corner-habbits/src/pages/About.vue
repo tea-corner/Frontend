@@ -1,5 +1,9 @@
 <template>
+<html>
   <h3><block-item/></h3>
+
+</html>
+  
 </template>
 
 <script>
@@ -11,6 +15,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+html {
+  overflow-x: hidden;
+overflow-y: visible;
+}
 </style>
