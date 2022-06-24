@@ -33,7 +33,7 @@
 
 
                     <div class="loginButtom">
-                        <red-button>Регистрация</red-button>
+                        <red-button>Вход</red-button>
                     </div>
 
                 </form>
@@ -85,6 +85,10 @@ body {
 }
 
 @media (min-width: 950px) and (max-width: 1441px){
+    html{
+        overflow-y: hidden;
+    }
+
     main {
         display: grid;
         
@@ -131,8 +135,8 @@ body {
         margin-top: 5rem;
         align-self: flex-end;
         font-size: 1.6rem;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 13%;
+        margin-right: 13%;
     }
 
     .warningBlock b {
@@ -165,6 +169,7 @@ body {
 
 
 }
+
 
 
 
