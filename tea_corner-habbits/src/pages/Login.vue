@@ -42,11 +42,14 @@
                     <p> Ещё не хакнул себя? <br> <a href="registration">Регистрация</a> </p>
                 </div>
 
+
+                <div class="warningBlock">
+                    <p> <b>ВНИМАНИЕ</b> <br> Имеются последствия: вы можете стать слишком продуктивным и успешным</p>
+                </div>
+
             </div>
 
-            <div class="warningBlock">
-                <p> <b>ВНИМАНИЕ</b> <br> Имеются последствия: вы можете стать слишком продуктивным и успешным</p>
-            </div>
+
 
         </main>
 
@@ -67,6 +70,7 @@ export default {
 <style scoped>
 @import url("../assets/fonts/Blender_Pro/stylesheet.css");
 
+
 body {
     margin: 0px;
     background-color: #F5EE00;
@@ -75,89 +79,92 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 2rem;
     font-family: "Blender Pro";
     font-weight: bold;
+    font-size: 2rem;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 12.4rem auto 40%;
-    grid-template-rows: 20% auto 7% 16%;
-    grid-template-areas: "start GreyCol overLoginCol" "start GreyCol loginCol" "start none warning";
+@media (min-width: 950px){
+    main {
+        display: grid;
+        
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "GreyCol loginCol";
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .loginPageGrey {
+        text-align: center;
+        font-size: 6.4rem;
+        grid-area: GreyCol;
+    }
+
+    .loginPageGrey p {
+        /* margin-left: 12.4rem; */
+        color: #00F0FF;
+        font-family: "Blender Pro", sans-serif;
+    }
+
+    .loginBlock {
+        margin-top: 4rem;
+        grid-area: loginCol;
+        align-items: center;
+        text-align: center;
+        font-style: bold;
+    }
+
+    .registrationBlock p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .registrationBlock a {
+        text-decoration: none;
+        color: #FF003C;
+    }
+
+    .warningBlock {
+        margin-top: 5rem;
+        align-self: flex-end;
+        font-size: 1.6rem;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .warningBlock b {
+        color: #FF003C;
+    }
+
+    .entrance {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 6.4rem;
+    }
+
+    .loginArea input,
+    .passwordArea input {
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        border-bottom: 0.2rem black solid;
+        font-size: 2.4rem;
+        margin-top: 3rem;
+    }
+
+    .loginArea input::placeholder,
+    .passwordArea input::placeholder {
+        font-family: "Blender Pro";
+        font-weight: 700;
+        color: black;
+    }
+
+
+
+
 }
 
-p {
-    margin: 0;
-}
 
-.loginPageGrey {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 6.4rem;
-    grid-column-start: GreyCol;
-}
-
-.loginPageGrey p {
-    /* margin-left: 12.4rem; */
-    color: #00F0FF;
-    font-family: "Blender Pro";
-}
-
-.loginBlock {
-    grid-area: loginCol;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-style: bold;
-}
-
-.registrationBlock p {
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.registrationBlock a {
-    text-decoration: none;
-    color: #FF003C;
-}
-
-.warningBlock {
-    margin-top: 8rem;
-    grid-area: warning;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    font-size: 1.6rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
-
-.warningBlock b {
-    color: #FF003C;
-}
-
-.entrance {
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 6.4rem;
-}
-
-.loginArea input,
-.passwordArea input {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px;
-    border-bottom: 0.2rem black solid;
-    font-size: 2.4rem;
-    margin-top: 3rem;
-}
-
-.loginArea input::placeholder,
-.passwordArea input::placeholder {
-    font-family: "Blender Pro";
-    font-weight: 700;
-    color: black;
-}
 
 </style>
