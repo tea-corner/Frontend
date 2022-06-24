@@ -13,7 +13,7 @@
 
         <body>
 
-             <nav-bar></nav-bar>
+             <hero-menu></hero-menu>
 
         <main>
 
@@ -90,12 +90,12 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue';
+import HeroMenu from '@/components/HeroMenu';
 
 export default {
     
     components: {
-        NavBar
+        HeroMenu
     }
 
 }
