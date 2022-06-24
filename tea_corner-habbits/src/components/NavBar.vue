@@ -90,4 +90,5 @@ export default {
   margin-right: auto;
   margin-bottom: 0;
 }
+
 </style>

@@ -11,6 +11,6 @@ export default {};
 <style scoped>
 .logoItem {
   margin-left: 12px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <a href="" class="btnSyncIcon">
+  <a href="" @click="$router.push('/')" class="btnSyncIcon">
     <img src="svg/sync.svg" />
   </a>
 </template>
@@ -12,6 +12,7 @@ export default {};
 .btnSyncIcon {
   display: flex;
   border: 0;
-  margin-right: 15px;
+  margin-right: 0px;
+  margin-left: 20px;
 }
 </style>
