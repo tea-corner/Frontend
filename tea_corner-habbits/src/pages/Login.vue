@@ -39,7 +39,7 @@
                 </form>
 
                 <div class="registrationBlock">
-                    <p> Ещё не хакнул себя? <br> <a href="registration">Регистрация</a> </p>
+                    <p> Ещё не хакнул себя? <br> <router-link to="/Registration" class="rout_link">Регистрация</router-link></p>
                 </div>
 
 
@@ -126,7 +126,7 @@ body {
         font-weight: 700;
     }
 
-    .registrationBlock a {
+    .registrationBlock .rout_link {
         text-decoration: none;
         color: #FF003C;
     }

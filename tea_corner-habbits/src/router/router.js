@@ -2,10 +2,10 @@ import Main from '@/pages/Main';
 import Users from '@/pages/Users';
 import About from '@/pages/About';
 import LoginPage from '@/pages/Login';
+import RegistrationPage from '@/pages/Registration';
 import { createRouter, createWebHistory } from 'vue-router';
 
-const routes = [
-    {
+const routes = [{
         path: '/',
         component: Main
     },
@@ -23,7 +23,13 @@ const routes = [
     {
         path: '/login',
         component: LoginPage
-    }
+    },
+
+    {
+        path: '/registration',
+        component: RegistrationPage
+    },
+
 ]
 
 const router = createRouter({
