@@ -84,7 +84,7 @@ body {
     font-size: 2rem;
 }
 
-@media (min-width: 950px){
+@media (min-width: 950px) and (max-width: 1441px){
     main {
         display: grid;
         
@@ -114,6 +114,7 @@ body {
         align-items: center;
         text-align: center;
         font-style: bold;
+        margin-bottom: 26.7%;
     }
 
     .registrationBlock p {
