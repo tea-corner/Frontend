@@ -33,7 +33,6 @@ export default {
 
 .dollarIcon {
     display: flex;
-    margin-right: 15px;
 }
 
 </style>
