@@ -1,35 +1,13 @@
 <template>
   <section class="sectionBlocks">
     <div class="container selectionContainer">
-      <ul class="iii">
-        <li>
-          <h4 class="blockName">Привычки</h4>
-          <div class="blockNewList">
-            <button class="btnBlockAdd">Добавить привычку</button>
-          </div>
-        </li>
+      
 
-        <li>
           <h4 class="blockName">Привычки</h4>
           <div class="blockNewList">
             <button class="btnBlockAdd">Добавить привычку</button>
           </div>
-        </li>
 
-        <li>
-          <h4 class="blockName">Привычки</h4>
-          <div class="blockNewList">
-            <button class="btnBlockAdd">Добавить привычку</button>
-          </div>
-        </li>
-
-        <li>
-          <h4 class="blockName">Привычки</h4>
-          <div class="blockNewList">
-            <button class="btnBlockAdd">Добавить привычку</button>
-          </div>
-        </li>
-      </ul>
 
     </div>
   </section>
