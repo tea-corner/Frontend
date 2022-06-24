@@ -1,5 +1,5 @@
-import RedButton from "@/components/UI/RedButton";
+import MyButton from "@/components/UI/MyButton";
 
 export default [
-    RedButton
+    MyButton
 ]

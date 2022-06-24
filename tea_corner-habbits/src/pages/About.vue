@@ -1,8 +1,12 @@
 <template>
-  <h3>About page</h3>
+  <div>
+    <h3>About page</h3>
+    <logo></logo>
+  </div>
 </template>
 
 <script>
+
 export default {
 
 }
