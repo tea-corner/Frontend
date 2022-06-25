@@ -53,7 +53,8 @@
 
 .sectionBlocks {
   background: url('../../public/images/menuIMG.jpg');
-  height: 810px;
+  height: 890px;
+  width: 1728px;
 }
 
 .selectionContainer {
