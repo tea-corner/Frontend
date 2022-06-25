@@ -6,17 +6,18 @@
 </template>
 
 <script>
-import HeroMenu from '@/components/HeroMenu'
-import Hero from '@/components/Hero'
+import HeroMenu from "@/components/HeroMenu";
+import Hero from "@/components/Hero";
+import TaskButton from "@/components/UI/TaskButton";
 
 export default {
   components: {
     HeroMenu,
-    Hero
-  }
-}
-
-    Hero</script>
+    Hero,
+    TaskButton,
+  },
+};
+</script>
 
 <style>
 </style>
