@@ -84,9 +84,10 @@ body {
     font-size: 2rem;
 }
 
-@media (min-width: 950px) and (max-width: 1441px){
+@media (min-width: 1024px) {
     html{
         overflow-y: hidden;
+
     }
 
     main {
@@ -94,6 +95,9 @@ body {
         
         grid-template-columns: 6fr 4fr;
         grid-template-areas: "GreyCol loginCol";
+
+        width: 100vw;
+        height: 100vh;
     }
 
     p {
