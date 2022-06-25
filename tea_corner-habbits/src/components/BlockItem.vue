@@ -62,9 +62,9 @@
           <ul class="listBlockHabbitInventory">
             <li 
               v-for="itemInventory in inventoryItems"
-              :key="itemInventory.description"
+              :key="itemInventory"
             >
-              <inventory-item :weaponName="itemInventory.description"></inventory-item>
+              <inventory-item :item="itemInventory"></inventory-item>
             </li>
           </ul>
         </div>
@@ -125,12 +125,12 @@ export default {
       ],
 
       inventoryItems: [
-        {description: "Uzi1"},
-        {description: "Uzi2"},
-        {description: "Uzi3"},
-        {description: "Uzi4"},
-        {description: "Uzi5"},
-        {description: "Uzi6"},
+        {description: "Uzi1", imageLink: "http://haits.tk/api/images/ak-47.png"},
+        {description: "Uzi2", imageLink: "http://haits.tk/api/images/MP-5.png"},
+        {description: "Uzi3", imageLink: "http://haits.tk/api/images/Uzi.png"},
+        {description: "Uzi4", imageLink: "http://haits.tk/api/images/Бластер.png"},
+        {description: "Uzi5", imageLink: "http://haits.tk/api/images/Чаша рамэна.png"},
+        {description: "Uzi6", imageLink: "http://haits.tk/api/images/Онигири.png"},
         {description: "Uzi1"},
         {description: "Uzi2"},
         {description: "Uzi3"},
