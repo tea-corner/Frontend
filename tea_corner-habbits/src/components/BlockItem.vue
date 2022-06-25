@@ -152,7 +152,9 @@ export default {
 <style scoped>
 .selectionContainer {
   display: flex;
+
 }
+
 .listBlockHabbitInventory {
   margin-bottom: 0;
   height: 126px;

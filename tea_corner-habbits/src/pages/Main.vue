@@ -37,5 +37,6 @@ body {
 }
 .blockItemAll {
   display: flex;
+  flex-direction: column;
 }
 </style>
