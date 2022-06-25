@@ -1,5 +1,6 @@
 <template>
   <div>
+  
     <a class="habbitButton">
       <img src="svg/habbit-btn.svg" alt="habbitButton" />
     </a>
