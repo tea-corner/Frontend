@@ -2,22 +2,25 @@
     <div class="heroMenu">
         <nav-bar></nav-bar>
         <hero></hero>
+        <create-item></create-item>
     </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
+import CreateItem from '@/components/CreateItem'
 
 export default {
     components: {
         NavBar,
-        Hero
+        Hero,
+        CreateItem
     }
 }
 </script>
 
-<style>
+<style scoped>
 .heroMenu {
     background-image: url("../../public/images/hero_menu.png");
     height: 307px;
