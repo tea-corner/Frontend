@@ -2,7 +2,7 @@
   <div class="InventoryItem">
     <img src="../../../public/images/uziIcon.png" alt="" class="weaponIcon" />
     <div class="weaponBlock">
-      <h5 class="weaponName">Uzi</h5>
+      <h5 class="weaponName">{{this.weaponName}}</h5>
     </div>
   </div>
 </template>
@@ -10,11 +10,9 @@
 
 <script>
 export default {
-  data() {
-    return {
-      nameWeapon: "Uzi",
-    };
-  },
+  props: {
+    weaponName: String
+  }
 };
 </script>
 
