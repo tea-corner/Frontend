@@ -12,9 +12,12 @@
 
     <body>
         <main>
+            <div class="nameProject"> <img src="../../public/images/GamifyYourLife.png" alt="GamifyYourLife"></div>
 
+            <div class="nameTeam"><img src="../../public/svg/TeaCorner.svg" alt=""></div>
             <div class="registrationBlock">
-            <div class="regBlockBG">
+            
+            
                 <div class="text">Регистрация  </div>
                 <form action="" 
                 method="post" 
@@ -34,31 +37,12 @@
                         <input type="password" name="regPassword-2" id="" placeholder="Подтвердите пароль">
                     </div>   
                     
-                    <div class="registrButton">
-                        <input type="submit" name="regButton" id="" value="Продолжить">
-                    </div>
+                    <stealth-button class="sButton">Продолжить</stealth-button>
                 </form>
             </div>
 
                     
-                
-                
-
-                
-
-
-
-            </div>
-
-
-
         </main>
-
-
-
-
-
-
 
 
     </body>
@@ -71,15 +55,23 @@
 </template>
 
 <script>
+import StealthButton from '@/components/UI/StealthButton.vue';
 
 export default {
-
+    components: { StealthButton }
 }
 
 </script>
 
-<style>
+<style scoped>
 
+@import url("../assets/fonts/Cyberpunk/stylesheet.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     background-image: url("../../public/images/YellowCitypng.png");
     background-position: center center;
@@ -90,44 +82,74 @@ body {
     font-weight: bold;
     font-size: 2rem;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
+
+
+
+
 @media (min-width: 950px) and (max-width: 1441px){
-    body {
-        background-image: url("../../public/images/YellowCityFullWithBlackLine_1920-930.png");
+    html {
+        background-image: url("../../public/images/YellowCityFullWithBlackLineWithoutTitle_1920-930.png");
         background-position: center center;
         background-attachment: fixed;
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    body {
+        background-image: url("../../public/images/YellowCityFullWithBlackLineWithoutTitle_1920-930.png");
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         background-repeat: no-repeat;
         font-family: "Blender Pro";
         font-weight: bold;
         font-size: 2rem;
+        overflow: hidden;
         
     }
 
     main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "leftCol centerCol rightCol";
-        
+        display: grid; 
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "projectName projectName rightCol"
+        "leftCol2 regBlock regBlock";
+        height: 100vh;
+        width: 100vw;
     }
 
     .registrationBlock {
-        grid-area: centerCol;
-        justify-items: center ;
-        align-items: center ;
+        /* margin-top: 13%; */
+        grid-area: regBlock; 
+        display: flex;
+        align-self: center;
+        justify-content: center ;
+        align-content: center ;
         text-align: center;
-        margin-top: 50%;
-    }
+         background-image: url("../../public/svg/BlueBorder.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        flex-direction: column;
+        
+    } 
 
-    .regBlockBG{
+    /* .regBlockBG{
         background-image: url("../../public/svg/BlueBorder.svg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
-        padding: 0%;
-    }
+        height: 100%;
+        display: flex;
+        justify-content: center ;
+        align-content: center ;
+        text-align: center;
+        flex-direction: column;
+        /* padding-top: 10%; 
+    } */
 
     .loginArea input,
     .passwordArea input{
@@ -147,32 +169,28 @@ body {
 
     .registrationBlock .text {
         font-size: 5rem;
-    
+        padding-top: 2%;
     }
 
-    .registrButton {
-
-        color: black;
-        margin-top: 2rem;
-        /* margin-bottom: 2rem; */
-        padding: 1rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        border: 0px rgba(0, 0, 0, 0);
-        font-family: "Blender Pro";
-        font-size: 2.4rem;
-        font-weight: 700;        
-        background-color: rgba(0, 0, 0, 0);
-        background: url("../../public/svg/buttonBorder.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: auto;
-        height: auto;
-        cursor: pointer;
+    .sButton{
+        padding: 0 0 0 0;
     }
 
+    .nameProject{
+        grid-area: projectName ;
+        align-self: start;
+        justify-self: center;
+    }
 
+    .nameProject img {
+        width: 50vw;
+    }
+
+    .nameTeam{
+        grid-area: rightCol;
+        justify-self: end;
+        align-self: start;
+    }
 }
 
 </style>
