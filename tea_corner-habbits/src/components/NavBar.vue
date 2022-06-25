@@ -38,11 +38,8 @@ export default {
     Profile,
   },
 
-  data() {
-    return {
-      balance: 0,
-    };
-  },
+  props: {balance: Number},
+  
 };
 </script>
 
