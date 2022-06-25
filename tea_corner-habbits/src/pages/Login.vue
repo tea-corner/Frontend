@@ -168,4 +168,98 @@ body {
     color: black;
   }
 }
+
+@media (min-width: 1024px) {
+    html{
+        overflow-y: hidden;
+
+    }
+
+    main {
+        display: grid;
+        
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "GreyCol loginCol";
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .loginPageGrey {
+        text-align: center;
+        font-size: 6.4rem;
+        grid-area: GreyCol;
+    }
+
+    .loginPageGrey p {
+        /* margin-left: 12.4rem; */
+        color: #00F0FF;
+        font-family: "Blender Pro", sans-serif;
+    }
+
+    .loginBlock {
+        margin-top: 4rem;
+        grid-area: loginCol;
+        align-items: center;
+        text-align: center;
+        font-style: bold;
+        margin-bottom: 26.7%;
+    }
+
+    .registrationBlock p {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .registrationBlock .rout_link {
+        text-decoration: none;
+        color: #FF003C;
+    }
+
+    .warningBlock {
+        margin-top: 5rem;
+        align-self: flex-end;
+        font-size: 1.6rem;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .warningBlock b {
+        color: #FF003C;
+    }
+
+    .entrance {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 6.4rem;
+    }
+
+    .loginArea input,
+    .passwordArea input {
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        border-bottom: 0.2rem black solid;
+        font-size: 2.4rem;
+        margin-top: 3rem;
+    }
+
+    .loginArea input::placeholder,
+    .passwordArea input::placeholder {
+        font-family: "Blender Pro";
+        font-weight: 700;
+        color: black;
+    }
+
+
+
+
+}
+
+
+
+
 </style>
