@@ -58,8 +58,20 @@
 
         <div class="scrollText">
           <ul class="listBlockHabbit">
-            <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
   
           </ul>
         </div>
@@ -69,6 +81,13 @@
 </template>
 
 <script>
+import InventoryItem from '@/components/UI/InventoryItem.vue'
+
+export default {
+  components: {
+    InventoryItem
+  }
+}
 </script>
 
 <style scoped>
