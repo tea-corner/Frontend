@@ -1,22 +1,41 @@
 <template>
-    <div class="app"> 
-        <router-view></router-view>
-    </div>
+  <div class="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 </script>
 
 <style>
-html {
-    font-size: 62.5%;
-    background-color: #f5ee00;
-    height: 100%;
-    
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1704px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+a {
+  text-decoration: none;
+}
 
-body {
-    margin: 0px;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  background-color: #f5ee00;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
 }
 </style>

@@ -1,1 +1,1 @@
-# frontend of tea-cornter-habbits with Vue3 
+# frontend of tea-corner-habbits with Vue3 
