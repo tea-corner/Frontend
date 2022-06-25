@@ -3,9 +3,10 @@
   <div class="mainPage">
     <hero-menu></hero-menu>
     <div class="blockItemAll">
-    <block-item> </block-item>
+    <block-item/>
     </div>
   </div>
+  
 </body>
   
 </template>

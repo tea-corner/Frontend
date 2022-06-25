@@ -1,11 +1,36 @@
 <template>
-  <div class="v-popup">
-    <div class="v-popup_header">
-      <span>Popup Name</span>
-      <span></span>
-    </div>
-    <div class="v-popup_content">
-      <slot> </slot>
+  <div class="popup_wrapper" ref="popup_wrapper">
+    <div class="v-popup">
+      <div class="v-popup_header">
+        <h4>Создать привычку</h4>
+        <form action="">
+          <div class="opisanie_">
+            <label for="" class="opisanie_">Название*</label>
+            <input type="Введите название" placeholder="Введите название" class="nazvanie" />
+          </div>
+          <div class="opisanie___">
+            <label for="Описание" class="opisanie___">Описание</label>
+            <input type="text" name="Введите описание" placeholder="Введите описание" id="" class="nazvanie" />
+          </div>
+        </form>
+
+        <div class="v-popup_content">
+          <form action="">
+            <div class="opisanie_">
+              <label for="" class="opisanie_">Тип привычки*</label>
+              <input type="Введите название" placeholder="Выберете тип" class="nazvanie" />
+            </div>
+            <div class="opisanie_">
+              <label for="" class="opisanie_"> Время выполнения</label>
+              <input type="Введите название" placeholder="Укажите к-во дней" class="nazvanie" />
+            </div>
+            <div class="opisanie_">
+              <label for="" class="opisanie_">Сложность от 1 до 5</label>
+              <input type="Введите название" placeholder="Сложность" class="nazvanie" />
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="v-popup_footer">
       <button class="close_modal" @click="closePopup">Close</button>
@@ -22,27 +47,88 @@ export default {
     return {};
   },
   methods: {
-     closePopup() {
-      this.$emit('closePopup')
-     }
-  }
+    closePopup() {
+      this.$emit("closePopup");
+    },
+  },
+  mounted() {
+    let vm = this;
+    document.addEventListener("click", function (item) {
+      if (item.target === vm.$refs["popup_wrapper"]) {
+        console.log(123);
+      }
+    });
+  },
 };
 </script>
 
-<style >
+<style scoped>
+.opisanie_ {
+  display: flex;
+  margin: 0;
+  margin-top: 14px;
+  margin-left: 30px;
+  flex-direction: column;
+}
+.opisanie___ {
+  display: flex;
+  margin-top: 20px;
+  margin: 0;
+  margin-left: 30px;
+  flex-direction: column;
+}
+.popup_wrapper {
+  background: rgba(64, 64, 64, 0.4);
+}
+.opisanie {
+  margin: auto;
+  width: auto;
+  height: 31px;
+  top: 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.headerBlueColor {
+  height: 238px;
+  margin-bottom: auto;
+  width: 543px;
+  background-color: #00b8c4;
+}
+
+
+
+.nazvanie {
+  width: 350px;
+  height: 31px;
+
+  display: flex;
+  margin-top: 15px;
+
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+
+}
 .v-popup {
-  padding: 16px;
-  position: fixed;
-  top: 50px;
-  background: #ffffff;
-  box-shadow: 0 0 17px 0 #e7e7e7;
-  border: 6px solid red;
-  width: 400px;
+  top: 0;
+
+  margin-top: 0;
+  height: 600px;
+  width: 490px;
+  border: 5px solid rgb(79, 131, 180);
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-color: #00d8e5;
 }
 .v-popup_header {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
+    justify-content:space-around;
+  flex-direction: column;
 }
 
 .v-popup_footer {
@@ -53,8 +139,9 @@ export default {
 
 .v-popup_content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+    justify-content:space-around;
+flex-direction: column;
 }
 
 .submit_btn {
@@ -66,6 +153,7 @@ export default {
 .close_modal {
   padding: 8px;
   color: white;
+
   background: blueviolet;
 }
 </style>ue

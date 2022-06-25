@@ -1,15 +1,15 @@
 <template>
-  <div class="createItem">
-  
-    <habbit-button v-if="habbitButtonVisited" @click="openModalWindow"></habbit-button>
-    <ModalWindow
-  v-if="isInfoPopupVisible"
-  @closePopup="closePopupInfo "
-  /> 
-    <daily-button v-if="dailyButtonVisited"></daily-button>
-    <todo-button v-if="todoButtonVisited"></todo-button>
-    <add-button v-show="addButtonVisited" @click="selectActive"></add-button>
-    
+  <div class="containerCreateItem">
+    <div class="createItem">
+      <habbit-button
+        v-if="habbitButtonVisited"
+        @click="openModalWindow"
+      ></habbit-button>
+      <daily-button v-if="dailyButtonVisited"></daily-button>
+      <todo-button v-if="todoButtonVisited"></todo-button>
+      <add-button v-show="addButtonVisited" @click="selectActive"></add-button>
+    </div>
+    <ModalWindow v-if="isInfoPopupVisible" @closePopup="closePopupInfo" />
   </div>
 </template>
 
@@ -26,8 +26,7 @@ export default {
     DailyButton,
     TodoButton,
     HabbitButton,
-    ModalWindow
-
+    ModalWindow,
   },
 
   name: "create-item",
@@ -55,14 +54,18 @@ export default {
     closePopupInfo() {
       this.isInfoPopupVisible = false;
     },
- 
   },
 };
 </script>
 
 <style scoped>
+.containerCreateItem {
+  position: relative;
+    z-index:100;
+}
 .createItem {
   display: flex;
+
   flex-direction: row-reverse;
   top: 307px;
   margin-right: 30px;
