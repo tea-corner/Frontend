@@ -1,9 +1,13 @@
 <template>
+  <div class="nav-barANDHeromenu">
+
+
     <div class="heroMenu">
         <nav-bar></nav-bar>
         <hero></hero>
         <create-item></create-item>
     </div>
+  </div>
 </template>
 
 <script>
@@ -22,7 +26,7 @@ export default {
 
 <style scoped>
 .heroMenu {
-    background-image: url("../../public/images/hero_menu.png");
-    height: 307px;
+  background-image: url("../../public/images/hero_menu.png");
+  height: 307px;
 }
 </style>
