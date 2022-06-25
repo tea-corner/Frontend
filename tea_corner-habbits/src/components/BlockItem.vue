@@ -247,4 +247,14 @@ export default {
   flex-wrap: wrap;
   display: flex;
 }
+
+.blockName:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.btnBlockAdd:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
 </style>

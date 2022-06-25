@@ -124,4 +124,9 @@ export default {
   justify-content: center;
   word-break: break-all;
 }
+
+.taskItem:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+}
 </style>
