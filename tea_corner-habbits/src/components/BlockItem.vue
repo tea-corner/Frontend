@@ -1,6 +1,5 @@
 <template>
   <div class="container selectionContainer">
-    
     <div class="blockHabbit">
       <h4 class="blockName">Привычки</h4>
 
@@ -26,10 +25,12 @@
         <button class="btnBlockAdd">Добавить ежедневную задачу</button>
 
         <div class="scrollTextDaily">
-          <ul class="listBlockTask"
-          v-for="task in taskItems"
-          :key="task.description">
-          <task-item :text="task.description"></task-item>
+          <ul
+            class="listBlockTask"
+            v-for="task in taskItems"
+            :key="task.description"
+          >
+            <task-item :text="task.description"></task-item>
           </ul>
         </div>
       </div>
@@ -42,10 +43,10 @@
         <button class="btnBlockAdd">Добавить задачу</button>
 
         <div class="scrollText">
-          <ul 
-          class="listBlockTask"
-          v-for="task in taskItems"
-          :key="task.desciption"
+          <ul
+            class="listBlockTask"
+            v-for="task in taskItems"
+            :key="task.desciption"
           >
             <task-item :text="task.description"></task-item>
           </ul>
@@ -57,10 +58,26 @@
       <h4 class="blockName">Инвентарь</h4>
 
       <div class="blockNewListInventory" id="elementBlock">
-        <div class="scrollText">
-          <ul class="listBlockTaskInventory">
-            <li class="itemBlockHabbitInventory">Привет</li>
-            <li class="itemBlockHabbitInventory">Привет</li>
+        <div class="scrollTextInventory">
+          <ul class="listBlockHabbitInventory">
+            <li class="itemBlockHabbitInventory">
+              <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+              <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+              <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+              <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+              <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+              <InventoryItem> </InventoryItem>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,63 +86,53 @@
 </template>
 
 <script>
+import InventoryItem from "@/components/UI/InventoryItem.vue";
 import TaskItem from "@/components/TaskItem";
 
 export default {
   components: {
-    TaskItem
+    TaskItem,
+    InventoryItem,
   },
 
   data() {
     return {
       taskItems: [
         {
-          description:
-            "Lala1",
+          description: "Lala1",
         },
         {
-          description:
-            "Lala2",
+          description: "Lala2",
         },
         {
-          description:
-            "Lala3",
+          description: "Lala3",
         },
         {
-          description:
-            "Lala4",
+          description: "Lala4",
         },
         {
-          description:
-            "Lala5",
+          description: "Lala5",
         },
         {
-          description:
-            "Lala6",
+          description: "Lala6",
         },
         {
-          description:
-            "Lala1",
+          description: "Lala1",
         },
         {
-          description:
-            "Lala2",
+          description: "Lala2",
         },
         {
-          description:
-            "Lala3",
+          description: "Lala3",
         },
         {
-          description:
-            "Lala4",
+          description: "Lala4",
         },
         {
-          description:
-            "Lala5",
+          description: "Lala5",
         },
         {
-          description:
-            "Lala6",
+          description: "Lala6",
         },
       ],
     };
@@ -137,6 +144,12 @@ export default {
 .selectionContainer {
   display: flex;
 }
+.listBlockHabbitInventory {
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
 .listBlockTask {
   text-align: center;
 }
@@ -148,6 +161,17 @@ export default {
   margin-top: 12px;
   margin-left: 10px;
   margin-bottom: 10px;
+  overflow: auto;
+  height: 423px;
+}
+
+.scrollTextInventory {
+  padding-top: auto;
+  margin-left: 4px;
+  margin-top: 5px;
+  overflow: auto;
+  height: 500px;
+
   overflow: auto;
   height: 416px;
 }
@@ -200,7 +224,6 @@ export default {
   height: 650px;
 }
 
-
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -216,9 +239,20 @@ export default {
 .blockNewList {
   width: 360px;
   height: 530px;
+
   margin-left: 15px;
   border: 0;
   overflow: auto;
+  background: url("../../public/svg/svgBlock.svg");
+}
+.blockNewListInventory {
+  width: 360px;
+  height: 530px;
+
+  margin-left: 15px;
+  border: 0;
+  overflow: auto;
+
   background: url("../../public/svg/svgBlock.svg");
 }
 </style>
