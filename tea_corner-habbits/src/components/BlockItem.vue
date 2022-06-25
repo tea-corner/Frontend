@@ -10,6 +10,7 @@
           <ul class="listBlockHabbit">
             <li class="itemBlockHabbit">Привет</li>
             <li class="itemBlockHabbit">Привет</li>
+          
   
           </ul>
         </div>
@@ -53,25 +54,70 @@
     <div class="blockHabbit">
       <h4 class="blockName">Инвентарь</h4>
 
-      <div class="blockNewList" id="elementBlock">
+      <div class="blockNewListInventory" id="elementBlock">
 
 
-        <div class="scrollText">
-          <ul class="listBlockHabbit">
+        <div class="scrollTextInventory">
+          <ul class="listBlockHabbitInventory">
+            <li class="itemBlockHabbitInventory">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+             <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+             <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+             <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
             <li class="itemBlockHabbit">
             <InventoryItem> </InventoryItem>
             </li>
             <li class="itemBlockHabbit">
             <InventoryItem> </InventoryItem>
             </li>
-
             <li class="itemBlockHabbit">
             <InventoryItem> </InventoryItem>
             </li>
-
             <li class="itemBlockHabbit">
             <InventoryItem> </InventoryItem>
             </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            
+            
+            
+            
   
           </ul>
         </div>
@@ -94,8 +140,17 @@ export default {
 .selectionContainer {
   display: flex;
 }
+.listBlockHabbitInventory {
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  
+}
+
 .listBlockHabbit {
   text-align: center;
+
+  
 }
 .HardBtn {
   white-space: wrap;
@@ -105,6 +160,16 @@ export default {
   margin-top: 12px;
   margin-left: 10px;
   margin-bottom: 10px;
+
+}
+
+.scrollTextInventory {
+  padding-top: auto;
+margin-left: 4px;
+margin-top: 5px;
+overflow:auto;
+height: 500px;
+
 }
 
 .btnBlockAdd {
@@ -142,12 +207,24 @@ export default {
 ::-webkit-scrollbar {
   width: 0;
 }
+
 .blockNewList {
-  width: 360px;
+ width: 360px;
   height: 530px;
+  
   margin-left: 15px;
   border: 0;
   overflow: auto;
+  background: url("../../public/svg/svgBlock.svg");
+}
+.blockNewListInventory {
+  width: 360px;
+  height: 530px;
+  
+  margin-left: 15px;
+  border: 0;
+  overflow: auto;
+  
   background: url("../../public/svg/svgBlock.svg");
 }
 </style>

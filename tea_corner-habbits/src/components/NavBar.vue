@@ -54,7 +54,7 @@ export default {
   margin-bottom: 0;
   align-items: center;
   font-size: 30px;
-width: 100%;
+
   font-family: "Blender Pro";
   font-style: normal;
 }
