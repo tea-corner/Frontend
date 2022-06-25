@@ -59,4 +59,9 @@ export default {
     height: 90px;
 
 }
+
+.InventoryItem:hover{
+  opacity: 0.5;
+  transition: 0.7s;
+}
 </style>

@@ -13,4 +13,8 @@ export default {
 </script>
 
 <style scoped>
+.dailyButton:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 </style>
