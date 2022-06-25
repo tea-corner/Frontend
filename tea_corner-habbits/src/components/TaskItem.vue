@@ -22,7 +22,7 @@ export default {
 <style>
 .taskItem {
   display: flex;
-  width: 340px;
+  width: 329px;
   text-align: center;
   margin-top: 10px;
 }

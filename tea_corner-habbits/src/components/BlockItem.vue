@@ -173,7 +173,7 @@ export default {
   margin-left: 10px;
   margin-bottom: 10px;
   overflow: auto;
-  height: 423px;
+  height: 398px;
 }
 
 .scrollTextInventory {
@@ -181,16 +181,16 @@ export default {
   margin-left: 4px;
   margin-top: 5px;
   overflow: auto;
-  height: 500px;
+  height: 465px;
 }
 
 .scrollTextDaily {
   padding-top: auto;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
   overflow: auto;
-  height: 374px;
+  height: 370px;
 }
 
 .btnBlockAdd {
@@ -198,7 +198,7 @@ export default {
   margin-top: 10px;
 
   margin-left: 10px;
-  width: 340px;
+  width: 329px;
 
   color: #757575;
   border: 0;
@@ -238,19 +238,19 @@ export default {
 
 
 .blockNewList {
-  width: 360px;
-  height: 530px;
+  width: 348px;
+  height: 500px;
 
-  margin-left: 15px;
+  margin-left: 8px;
   border: 0;
   overflow: auto;
   background: url("../../public/svg/svgBlock.svg");
 }
 .blockNewListInventory {
-  width: 360px;
-  height: 530px;
+  width: 348px;
+  height: 500px;
 
-  margin-left: 15px;
+  margin-left: 10px;
   border: 0;
   overflow: auto;
 
