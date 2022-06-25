@@ -2,34 +2,38 @@ import Main from '@/pages/Main';
 import Users from '@/pages/Users';
 import About from '@/pages/About';
 import LoginPage from '@/pages/Login';
+import RegistrationPage from '@/pages/Registration';
 import PageNotFound from '@/pages/PageNotFound';
 import { createRouter, createWebHistory } from 'vue-router';
 
-const routes = [
-    {
-        path: '/',
-        component: Main
-    },
+const routes = [{
+    path: '/',
+    component: Main
+},
 
-    {
-        path: '/users',
-        component: Users
-    },
+{
+    path: '/users',
+    component: Users
+},
 
-    {
-        path: '/about',
-        component: About
-    },
+{
+    path: '/about',
+    component: About
+},
 
-    {
-        path: '/login',
-        component: LoginPage
-    },
+{
+    path: '/login',
+    component: LoginPage
+},
 
-    {
-        path: '/:pathMatch(.*)*',
-        component: PageNotFound
-    }
+{
+    path: '/registration',
+    component: RegistrationPage
+},
+{
+    path: '/:pathMatch(.*)*',
+    component: PageNotFound
+}
 ]
 
 const router = createRouter({
