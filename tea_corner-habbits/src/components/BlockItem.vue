@@ -68,52 +68,16 @@
             <li class="itemBlockHabbit">
             <InventoryItem> </InventoryItem>
             </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
+            <li class="itemBlockHabbit">
+            <InventoryItem> </InventoryItem>
+            </li>
 
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-             <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-             <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-             <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-            <InventoryItem> </InventoryItem>
-            </li>
             
             
             
