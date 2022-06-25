@@ -3,22 +3,25 @@
 
 
     <div class="heroMenu">
-      <nav-bar></nav-bar>
-      <hero></hero>
+        <nav-bar></nav-bar>
+        <hero></hero>
+        <create-item></create-item>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
-import Hero from "@/components/Hero";
+import NavBar from '@/components/NavBar'
+import Hero from '@/components/Hero'
+import CreateItem from '@/components/CreateItem'
 
 export default {
-  components: {
-    NavBar,
-    Hero,
-  },
-};
+    components: {
+        NavBar,
+        Hero,
+        CreateItem
+    }
+}
 </script>
 
 <style scoped>

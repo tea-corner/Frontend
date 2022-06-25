@@ -2,6 +2,7 @@ import Main from '@/pages/Main';
 import Users from '@/pages/Users';
 import About from '@/pages/About';
 import LoginPage from '@/pages/Login';
+import PageNotFound from '@/pages/PageNotFound';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -23,6 +24,11 @@ const routes = [
     {
         path: '/login',
         component: LoginPage
+    },
+
+    {
+        path: '/:pathMatch(.*)*',
+        component: PageNotFound
     }
 ]
 

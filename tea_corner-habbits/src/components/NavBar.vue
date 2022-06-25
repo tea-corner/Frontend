@@ -5,6 +5,7 @@
         <logo></logo>
         <a href="" class="logoText" @click="$router.push('/about')"
           >Tea Corner
+          
         </a>
         <a href="" class="navLink" @click="$router.push('/')">Главная</a>
         <a href="" class="navLink" @click="$router.push('/login')">Данжи</a>
