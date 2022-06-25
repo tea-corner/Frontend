@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Cyberpunk-Regular';
+    src: url('Cyberpunk-Regular.svg#Cyberpunk-Regular') format('svg'), url('Cyberpunk-Regular.ttf') format('truetype'), url('Cyberpunk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('Cyberpunk.eot');
+    src: url('Cyberpunk.eot?#iefix') format('embedded-opentype'), url('Cyberpunk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
