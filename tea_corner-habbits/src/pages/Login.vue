@@ -35,8 +35,8 @@
                 />
               </div>
 
-              <div class="loginButtom">
-                <my-button>Регистрация</my-button>
+              <div class="loginButton">
+                <my-button class="redButton">  <b>Войти</b></my-button>
               </div>
             </form>
 
@@ -254,8 +254,14 @@ body {
         color: black;
     }
 
+  .redButton{
+    font-size: 3rem;
+    padding: inherit 10rem inherit 10rem;
+  }
 
-
+  .redButton b{
+    padding: 0rem 2rem 0rem 2rem;
+  }
 
 }
 
