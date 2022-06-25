@@ -14,7 +14,7 @@ export default {
 .taskButton {
     background-color: #006970;
     width: 29px;
-    height: 48px;
+    height: auto;
     color: white;
     font-size: 30px;
     font-family: 'Blender Pro';

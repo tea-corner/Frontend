@@ -11,11 +11,7 @@ import TaskButton from "@/components/UI/TaskButton";
 
 export default {
   components: { TaskButton },
-  data() {
-    return {
-      text: "Hahahhahahahha",
-    };
-  },
+
   props: {
     text: String,
     required: Boolean,
@@ -28,6 +24,7 @@ export default {
   display: flex;
   width: 340px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .desciption {
@@ -36,5 +33,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  word-break: break-all;
 }
 </style>
