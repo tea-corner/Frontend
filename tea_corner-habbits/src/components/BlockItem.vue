@@ -165,6 +165,7 @@ export default {
 
 .listBlockTask {
   text-align: center;
+  margin: 0;
 }
 .HardBtn {
   white-space: wrap;
@@ -216,14 +217,11 @@ export default {
 }
 
 .blockName {
-  margin-right: 165px;
+
   margin-bottom: 10px;
   margin-left: 16px;
   white-space: nowrap;
   font-family: "Blender Pro";
-}
-.blockHabbit {
-  height: 650px;
 }
 
 .blockDaily {
@@ -240,19 +238,18 @@ export default {
 
 
 .blockNewList {
-  width: 348px;
+  width: 351px;
   height: 500px;
+  margin-right: 6px;
 
-  margin-left: 8px;
   border: 0;
   overflow: auto;
   background: url("../../public/svg/svgBlock.svg");
 }
 .blockNewListInventory {
-  width: 348px;
+  width: 351px;
   height: 500px;
 
-  margin-left: 10px;
   border: 0;
   overflow: auto;
 
