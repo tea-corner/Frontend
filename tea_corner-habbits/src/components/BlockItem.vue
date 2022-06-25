@@ -1,42 +1,99 @@
 <template>
-  <section class="sectionBlocks">
-    <div class="container selectionContainer">
+  <div class="container selectionContainer">
+    <div class="blockHabbit">
       <h4 class="blockName">Привычки</h4>
-      <div class="blockNewList">
-        <button class="btnBlockAdd">Добавить привычку</button>
-        <div class="scrollText">
-          <ul>
-            <li>Привет</li>
-            <li>Привет1</li>
-            <li>Привет2</li>
-            <li>Привет2</li>
 
-            <li>Привет2</li>
-            <li>Привет2</li>
+      <div class="blockNewList" id="elementBlock">
+        <button class="btnBlockAdd">Добавить привычку</button>
+
+        <div class="scrollText">
+          <ul class="listBlockHabbit">
+            <li class="itemBlockHabbit">Привет</li>
+            <li class="itemBlockHabbit">Привет</li>
+  
           </ul>
         </div>
       </div>
-
-      
     </div>
-  </section>
+
+    <div class="blockHabbit">
+      <h4 class="blockName">Ежедневные дела</h4>
+
+      <div class="blockNewList HardBtn" id="elementBlock">
+        <button class="btnBlockAdd" >Добавить ежедневную задачу</button>
+
+        <div class="scrollText">
+          <ul class="listBlockHabbit">
+            <li class="itemBlockHabbit">Привет</li>
+            <li class="itemBlockHabbit">Привет</li>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blockHabbit">
+      <h4 class="blockName">To-Do</h4>
+
+      <div class="blockNewList" id="elementBlock">
+        <button class="btnBlockAdd"> Добавить задачу</button>
+
+        <div class="scrollText">
+          <ul class="listBlockHabbit">
+            <li class="itemBlockHabbit">Привет</li>
+            <li class="itemBlockHabbit">Привет</li>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blockHabbit">
+      <h4 class="blockName">Инвентарь</h4>
+
+      <div class="blockNewList" id="elementBlock">
+
+
+        <div class="scrollText">
+          <ul class="listBlockHabbit">
+            <li class="itemBlockHabbit">Привет</li>
+            <li class="itemBlockHabbit">Привет</li>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 </script>
 
 <style scoped>
-.scrollText {
-  overflow: auto;
-  padding-top: auto;
-  margin-left: 10px;
+.selectionContainer {
+  display: flex;
 }
+.listBlockHabbit {
+  text-align: center;
+}
+.HardBtn {
+  white-space: wrap;
+}
+.scrollText {
+  padding-top: auto;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 .btnBlockAdd {
   width: 35px;
   margin-top: 10px;
 
   margin-left: 10px;
-  width: 392px;
+  width: 340px;
 
   color: #757575;
   border: 0;
@@ -49,31 +106,29 @@
   line-height: 36px;
 
   align-items: center;
-}
 
-.sectionBlocks {
-  background: url('../../public/images/menuIMG.jpg');
-  height: 890px;
-  width: 1728px;
-}
-
-.selectionContainer {
-  height: 100%;
 }
 
 .blockName {
-  margin-right: 203px;
+  margin-right: 165px;
   margin-bottom: 10px;
   margin-left: 16px;
+  white-space: nowrap;
+  font-family: "Blender Pro";
+}
+.blockHabbit {
+  height: 650px;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
 .blockNewList {
-  height: 604px;
-
-  width: 413px;
-  margin-left: 12px;
+  width: 360px;
+  height: 530px;
+  margin-left: 15px;
   border: 0;
   overflow: auto;
-  background: url("../../public/images/block.png");
+  background: url("../../public/svg/svgBlock.svg");
 }
 </style>

@@ -1,25 +1,29 @@
 <template>
+  <div class="nav-barANDHeromenu">
+
+
     <div class="heroMenu">
-        <nav-bar></nav-bar>
-        <hero></hero>
+      <nav-bar></nav-bar>
+      <hero></hero>
     </div>
+  </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
-import Hero from '@/components/Hero'
+import NavBar from "@/components/NavBar";
+import Hero from "@/components/Hero";
 
 export default {
-    components: {
-        NavBar,
-        Hero
-    }
-}
+  components: {
+    NavBar,
+    Hero,
+  },
+};
 </script>
 
-<style>
+<style scoped>
 .heroMenu {
-    background-image: url("../../public/images/hero_menu.png");
-    height: 307px;
+  background-image: url("../../public/images/hero_menu.png");
+  height: 307px;
 }
 </style>

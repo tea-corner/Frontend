@@ -26,6 +26,10 @@ ul {
     margin: 0;
     padding: 0;
 }
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
 
 img {
     max-width: 100%;
