@@ -24,7 +24,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-left: 13px;
+    margin-left: 10px;
     margin-top: 9px;
     flex-wrap: wrap;
     

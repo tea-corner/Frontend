@@ -152,7 +152,9 @@ export default {
 <style scoped>
 .selectionContainer {
   display: flex;
+
 }
+
 .listBlockHabbitInventory {
   margin-bottom: 0;
   height: 126px;
@@ -163,6 +165,7 @@ export default {
 
 .listBlockTask {
   text-align: center;
+  margin: 0;
 }
 .HardBtn {
   white-space: wrap;
@@ -173,7 +176,7 @@ export default {
   margin-left: 10px;
   margin-bottom: 10px;
   overflow: auto;
-  height: 423px;
+  height: 398px;
 }
 
 .scrollTextInventory {
@@ -181,16 +184,16 @@ export default {
   margin-left: 4px;
   margin-top: 5px;
   overflow: auto;
-  height: 500px;
+  height: 465px;
 }
 
 .scrollTextDaily {
   padding-top: auto;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
   overflow: auto;
-  height: 374px;
+  height: 370px;
 }
 
 .btnBlockAdd {
@@ -198,7 +201,7 @@ export default {
   margin-top: 10px;
 
   margin-left: 10px;
-  width: 340px;
+  width: 329px;
 
   color: #757575;
   border: 0;
@@ -214,14 +217,11 @@ export default {
 }
 
 .blockName {
-  margin-right: 165px;
+
   margin-bottom: 10px;
   margin-left: 16px;
   white-space: nowrap;
   font-family: "Blender Pro";
-}
-.blockHabbit {
-  height: 650px;
 }
 
 .blockDaily {
@@ -238,19 +238,18 @@ export default {
 
 
 .blockNewList {
-  width: 360px;
-  height: 530px;
+  width: 351px;
+  height: 500px;
+  margin-right: 6px;
 
-  margin-left: 15px;
   border: 0;
   overflow: auto;
   background: url("../../public/svg/svgBlock.svg");
 }
 .blockNewListInventory {
-  width: 360px;
-  height: 530px;
+  width: 351px;
+  height: 500px;
 
-  margin-left: 15px;
   border: 0;
   overflow: auto;
 

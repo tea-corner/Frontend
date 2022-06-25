@@ -2,7 +2,9 @@
 <body>
   <div class="mainPage">
     <hero-menu></hero-menu>
+    <div class="blockItemAll">
     <block-item> </block-item>
+    </div>
   </div>
 </body>
   
@@ -32,5 +34,9 @@ export default {
 
 body {
   margin: 0;
+}
+.blockItemAll {
+  display: flex;
+  flex-direction: column;
 }
 </style>
