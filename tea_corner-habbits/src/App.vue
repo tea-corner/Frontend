@@ -5,6 +5,13 @@
 </template>
 
 <script>
+import MainPage from "@/pages/Main";
+
+export default {
+  components: {
+    MainPage,
+  },
+};
 </script>
 
 <style>

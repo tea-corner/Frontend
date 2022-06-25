@@ -8,11 +8,11 @@
 
         <div class="scrollText">
           <ul
-            v-for="task in taskItems"
-            :key="task.description"
+            v-for="item in habits"
+            :key="item.name"
             class="listBlockTask"
           >
-            <task-item :text="task.description"></task-item>
+            <task-item :text="item.name"></task-item>
           </ul>
         </div>
       </div>
@@ -27,10 +27,10 @@
         <div class="scrollTextDaily">
           <ul
             class="listBlockTask"
-            v-for="task in taskItems"
-            :key="task.description"
+            v-for="daily in dailies"
+            :key="daily.name"
           >
-            <task-item :text="task.description"></task-item>
+            <task-item :text="daily.name"></task-item>
           </ul>
         </div>
       </div>
@@ -45,10 +45,10 @@
         <div class="scrollText">
           <ul
             class="listBlockTask"
-            v-for="task in taskItems"
-            :key="task.desciption"
+            v-for="todo in todos"
+            :key="todo.name"
           >
-            <task-item :text="task.description"></task-item>
+            <task-item :text="todo.name"></task-item>
           </ul>
         </div>
       </div>
@@ -61,10 +61,10 @@
         <div class="scrollTextInventory">
           <ul class="listBlockHabbitInventory">
             <li 
-              v-for="itemInventory in inventoryItems"
-              :key="itemInventory"
+              v-for="item in inventory"
+              :key="item"
             >
-              <inventory-item :item="itemInventory"></inventory-item>
+              <inventory-item :item="item"></inventory-item>
             </li>
           </ul>
         </div>
@@ -85,45 +85,6 @@ export default {
 
   data() {
     return {
-      taskItems: [
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-        {
-          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
-        },
-      ],
-
       inventoryItems: [
         {description: "Uzi1", imageLink: "http://haits.tk/api/images/ak-47.png"},
         {description: "Uzi2", imageLink: "http://haits.tk/api/images/MP-5.png"},
@@ -146,6 +107,14 @@ export default {
       ]
     };
   },
+
+  props: {
+    habits: Array,
+    required: Boolean,
+    dailies: Array,
+    todos: Array,
+    inventory: Array
+  }
 };
 </script>
 
