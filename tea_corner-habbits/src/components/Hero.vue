@@ -3,12 +3,12 @@
     <img src="/images/image 3.png" alt="photo" class="sectionMenuPhoto" />
 
     <div class="heroInformation">
-      <h4 class="sectionHeroName">Божедомов Даниил</h4>
+      <h4 class="sectionHeroName">{{userName}}</h4>
 
       <div class="resourceHealth">
         <img src="/svg/health.svg" alt="healthIcon" class="healthIcon" />
-        <progress value="45" max="50" class="progressHealth"></progress>
-        <h6 class="dataHealth">45/50</h6>
+        <progress :value="health" max="50" class="progressHealth"></progress>
+        <h6 class="dataHealth">{{health}}/50</h6>
       </div>
 
       <div class="resourceExperience">
@@ -17,15 +17,23 @@
           alt="experienceIcon"
           class="experienceIcon"
         />
-        <progress value="11" max="50" class="progressExperience"></progress>
-        <h6 class="dataExperience">11/50</h6>
+        <progress :value="experiance" max="50" class="progressExperience"></progress>
+        <h6 class="dataExperience">{{experiance}}/50</h6>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      health: 0,
+      experiance: 0,
+      userName: "Danila Bozhedomchik"
+    }
+  }
+};
 </script>
 
 <style scoped>
