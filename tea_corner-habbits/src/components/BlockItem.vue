@@ -1,5 +1,6 @@
 <template>
   <div class="container selectionContainer">
+    
     <div class="blockHabbit">
       <h4 class="blockName">Привычки</h4>
 
@@ -7,49 +8,50 @@
         <button class="btnBlockAdd">Добавить привычку</button>
 
         <div class="scrollText">
-          <ul class="listBlockHabbit">
-            <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
-          
-  
+          <ul
+            v-for="task in taskItems"
+            :key="task.description"
+            class="listBlockTask"
+          >
+            <task-item :text="task.description"></task-item>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="blockHabbit">
+    <div class="blockDaily">
       <h4 class="blockName">Ежедневные дела</h4>
 
       <div class="blockNewList HardBtn" id="elementBlock">
-        <button class="btnBlockAdd" >Добавить ежедневную задачу</button>
+        <button class="btnBlockAdd">Добавить ежедневную задачу</button>
 
-        <div class="scrollText">
-          <ul class="listBlockHabbit">
-            <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
-  
+        <div class="scrollTextDaily">
+          <ul class="listBlockTask"
+          v-for="task in taskItems"
+          :key="task.description">
+          <task-item :text="task.description"></task-item>
           </ul>
         </div>
       </div>
     </div>
 
-
-    <div class="blockHabbit">
+    <div class="blockTodo">
       <h4 class="blockName">To-Do</h4>
 
       <div class="blockNewList" id="elementBlock">
-        <button class="btnBlockAdd"> Добавить задачу</button>
+        <button class="btnBlockAdd">Добавить задачу</button>
 
         <div class="scrollText">
-          <ul class="listBlockHabbit">
-            <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
-  
+          <ul 
+          class="listBlockTask"
+          v-for="task in taskItems"
+          :key="task.desciption"
+          >
+            <task-item :text="task.description"></task-item>
           </ul>
         </div>
       </div>
     </div>
-
 
     <div class="blockHabbit">
       <h4 class="blockName">Инвентарь</h4>
@@ -92,12 +94,69 @@
 
 <script>
 import InventoryItem from '@/components/UI/InventoryItem.vue'
+import TaskItem from "@/components/TaskItem";
 
 export default {
   components: {
+    TaskItem,
     InventoryItem
-  }
-}
+  },
+
+  data() {
+    return {
+      taskItems: [
+        {
+          description:
+            "Lala1",
+        },
+        {
+          description:
+            "Lala2",
+        },
+        {
+          description:
+            "Lala3",
+        },
+        {
+          description:
+            "Lala4",
+        },
+        {
+          description:
+            "Lala5",
+        },
+        {
+          description:
+            "Lala6",
+        },
+        {
+          description:
+            "Lala1",
+        },
+        {
+          description:
+            "Lala2",
+        },
+        {
+          description:
+            "Lala3",
+        },
+        {
+          description:
+            "Lala4",
+        },
+        {
+          description:
+            "Lala5",
+        },
+        {
+          description:
+            "Lala6",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -111,7 +170,8 @@ export default {
   
 }
 
-.listBlockHabbit {
+
+.listBlockTask {
   text-align: center;
 
   
@@ -134,6 +194,17 @@ margin-top: 5px;
 overflow:auto;
 height: 500px;
 
+  overflow: auto;
+  height: 416px;
+}
+
+.scrollTextDaily {
+  padding-top: auto;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+  height: 374px;
 }
 
 .btnBlockAdd {
@@ -154,7 +225,6 @@ height: 500px;
   line-height: 36px;
 
   align-items: center;
-
 }
 
 .blockName {
@@ -168,10 +238,27 @@ height: 500px;
   height: 650px;
 }
 
+.blockDaily {
+  height: 650px;
+}
+
+.blockTodo {
+  height: 650px;
+}
+
+
 ::-webkit-scrollbar {
   width: 0;
 }
 
+.blockNewListInventory {
+  width: 360px;
+  height: 530px;
+  margin-left: 15px;
+  border: 0;
+  overflow: auto;
+  background: url("../../public/svg/svgBlock.svg");
+}
 .blockNewList {
  width: 360px;
   height: 530px;

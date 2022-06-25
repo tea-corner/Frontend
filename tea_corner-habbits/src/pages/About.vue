@@ -1,8 +1,7 @@
 <template>
   <div class="sectionBlocks">
     <hero-menu></hero-menu>
-
-    <block-item> </block-item>
+    <block-item></block-item>
   </div>
 </template>
 
