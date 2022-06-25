@@ -176,7 +176,7 @@ export default {
   margin-left: 10px;
   margin-bottom: 10px;
   overflow: auto;
-  height: 398px;
+  height: 396px;
 }
 
 .scrollTextInventory {
