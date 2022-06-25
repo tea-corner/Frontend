@@ -1,5 +1,5 @@
 <template>
-  <button class="taskButton">
+  <button class="taskButton" v-if="isVisible">
     <slot></slot>
   </button>
 </template>
@@ -7,6 +7,16 @@
 <script>
 export default {
     name: "task-button",
+
+    props: {
+      isVisible: {
+        type: Boolean,
+        
+        default: function() {
+          return true
+        }
+      }
+    }
 };
 </script>
 

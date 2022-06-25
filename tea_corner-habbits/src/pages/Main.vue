@@ -8,6 +8,7 @@
         :dailies="dailies"
         :todos="todos"
         :inventory="inventory"
+        :user=user.userNickname
       > </block-item>
     </div>
   </div>
