@@ -89,7 +89,7 @@ body {
 
 
 
-@media (min-width: 950px) and (max-width: 1441px){
+@media (min-width: 1024px) {
     html {
         background-image: url("../../public/images/YellowCityFullWithBlackLineWithoutTitle_1920-930.png");
         background-position: center center;
