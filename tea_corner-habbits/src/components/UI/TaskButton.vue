@@ -5,11 +5,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+    name: "task-button",
+};
 </script>
 
 <style>
 .taskButton {
-    color:#00B8C4;
+    background-color: #006970;
+    width: 29px;
+    height: 48px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Blender Pro';
 }
 </style>

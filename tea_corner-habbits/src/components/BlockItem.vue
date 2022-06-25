@@ -9,8 +9,9 @@
         <div class="scrollText">
           <ul class="listBlockHabbit">
             <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
-  
+            <li class="itemBlockHabbit">
+              <task-item></task-item>
+            </li>
           </ul>
         </div>
       </div>
@@ -20,47 +21,40 @@
       <h4 class="blockName">Ежедневные дела</h4>
 
       <div class="blockNewList HardBtn" id="elementBlock">
-        <button class="btnBlockAdd" >Добавить ежедневную задачу</button>
+        <button class="btnBlockAdd">Добавить ежедневную задачу</button>
 
         <div class="scrollText">
           <ul class="listBlockHabbit">
             <li class="itemBlockHabbit">Привет</li>
             <li class="itemBlockHabbit">Привет</li>
-  
           </ul>
         </div>
       </div>
     </div>
-
 
     <div class="blockHabbit">
       <h4 class="blockName">To-Do</h4>
 
       <div class="blockNewList" id="elementBlock">
-        <button class="btnBlockAdd"> Добавить задачу</button>
+        <button class="btnBlockAdd">Добавить задачу</button>
 
         <div class="scrollText">
           <ul class="listBlockHabbit">
+            <li class="itemBlockHabbit"></li>
             <li class="itemBlockHabbit">Привет</li>
-            <li class="itemBlockHabbit">Привет</li>
-  
           </ul>
         </div>
       </div>
     </div>
 
-
     <div class="blockHabbit">
       <h4 class="blockName">Инвентарь</h4>
 
       <div class="blockNewList" id="elementBlock">
-
-
         <div class="scrollText">
           <ul class="listBlockHabbit">
             <li class="itemBlockHabbit">Привет</li>
             <li class="itemBlockHabbit">Привет</li>
-  
           </ul>
         </div>
       </div>
@@ -69,6 +63,13 @@
 </template>
 
 <script>
+import TaskItem from '@/components/TaskItem';
+
+export default {
+  components: {
+    TaskItem
+  },
+};
 </script>
 
 <style scoped>
@@ -106,7 +107,6 @@
   line-height: 36px;
 
   align-items: center;
-
 }
 
 .blockName {
