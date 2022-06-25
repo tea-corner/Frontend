@@ -1,23 +1,22 @@
 <template>
-<html>
-  <h3><block-item/></h3>
-
-</html>
-  
+  <div>
+    <hero-menu></hero-menu>
+    <hero></hero>
+  </div>
 </template>
 
 <script>
-import blockItem from '@/components/BlockItem'
+import HeroMenu from '@/components/HeroMenu'
+import Hero from '@/components/Hero'
+
 export default {
   components: {
-    blockItem
+    HeroMenu,
+    Hero
   }
 }
-</script>
 
-<style scoped>
-html {
-  overflow-x: hidden;
-overflow-y: visible;
-}
+    Hero</script>
+
+<style>
 </style>

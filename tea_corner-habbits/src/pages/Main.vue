@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="css/index.css" />
       </head>
 
-      <body>
-        <nav-bar></nav-bar>
+        <body>
+
+             <hero-menu></hero-menu>
 
         <main>
           <section class="sectionMenuHero">
@@ -102,13 +103,15 @@
 </template>
 
 <script>
-import NavBar from "../components/NavBar.vue";
+import HeroMenu from '@/components/HeroMenu';
 
 export default {
-  components: {
-    NavBar,
-  },
-};
+    
+    components: {
+        HeroMenu
+    }
+
+}
 </script>
 
 <style>
