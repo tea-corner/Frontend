@@ -26,8 +26,8 @@ export default {
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     border: 0rem;
     font-family: "Blender Pro";
     font-size: 2.4rem;
@@ -41,5 +41,9 @@ export default {
     height: auto;
     cursor: pointer;
 }
+
+
+
+
 
 </style>
