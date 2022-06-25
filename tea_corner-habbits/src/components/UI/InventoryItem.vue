@@ -1,8 +1,8 @@
 <template>
   <div class="InventoryItem">
-    <img src="../../../public/images/uziIcon.png" alt="" class="weaponIcon" />
+    <img :src="item.imageLink" alt="" class="weaponIcon" />
     <div class="weaponBlock">
-      <h5 class="weaponName">{{this.weaponName}}</h5>
+      <h5 class="weaponName">{{this.item.description}}</h5>
     </div>
   </div>
 </template>
@@ -10,9 +10,7 @@
 
 <script>
 export default {
-  props: {
-    weaponName: String
-  }
+  props: ['item'],
 };
 </script>
 
@@ -34,7 +32,7 @@ export default {
 
 .weaponBlock {
     width: 100px;
-    height: 21px;   
+    height:21px;   
     background-color: #00AEB9;
 }
 
@@ -46,6 +44,7 @@ export default {
 .weaponIcon {
     margin-bottom: auto;
     width: 100px;
+    height: 90px;
 
 }
 </style>
