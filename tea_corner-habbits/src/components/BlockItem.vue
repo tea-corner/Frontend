@@ -60,23 +60,11 @@
       <div class="blockNewListInventory" id="elementBlock">
         <div class="scrollTextInventory">
           <ul class="listBlockHabbitInventory">
-            <li class="itemBlockHabbitInventory">
-              <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-              <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-              <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-              <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-              <InventoryItem> </InventoryItem>
-            </li>
-            <li class="itemBlockHabbit">
-              <InventoryItem> </InventoryItem>
+            <li 
+              v-for="itemInventory in inventoryItems"
+              :key="itemInventory.description"
+            >
+              <inventory-item :weaponName="itemInventory.description"></inventory-item>
             </li>
           </ul>
         </div>
@@ -99,42 +87,63 @@ export default {
     return {
       taskItems: [
         {
-          description: "Lala1",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala2",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala3",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala4",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala5",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala6",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala1",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala2",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala3",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala4",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala5",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
         {
-          description: "Lala6",
+          description: "Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1Lala1",
         },
       ],
+
+      inventoryItems: [
+        {description: "Uzi1"},
+        {description: "Uzi2"},
+        {description: "Uzi3"},
+        {description: "Uzi4"},
+        {description: "Uzi5"},
+        {description: "Uzi6"},
+        {description: "Uzi1"},
+        {description: "Uzi2"},
+        {description: "Uzi3"},
+        {description: "Uzi4"},
+        {description: "Uzi5"},
+        {description: "Uzi6"},
+        {description: "Uzi1"},
+        {description: "Uzi2"},
+        {description: "Uzi3"},
+        {description: "Uzi4"},
+        {description: "Uzi5"},
+        {description: "Uzi6"}
+      ]
     };
   },
 };
@@ -145,9 +154,11 @@ export default {
   display: flex;
 }
 .listBlockHabbitInventory {
+  margin-bottom: 0;
+  height: 126px;
+  display: flex;
   text-align: center;
   flex-wrap: wrap;
-  display: flex;
 }
 
 .listBlockTask {
@@ -171,9 +182,6 @@ export default {
   margin-top: 5px;
   overflow: auto;
   height: 500px;
-
-  overflow: auto;
-  height: 416px;
 }
 
 .scrollTextDaily {
@@ -228,14 +236,7 @@ export default {
   width: 0;
 }
 
-.blockNewListInventory {
-  width: 360px;
-  height: 530px;
-  margin-left: 15px;
-  border: 0;
-  overflow: auto;
-  background: url("../../public/svg/svgBlock.svg");
-}
+
 .blockNewList {
   width: 360px;
   height: 530px;
@@ -254,5 +255,8 @@ export default {
   overflow: auto;
 
   background: url("../../public/svg/svgBlock.svg");
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 </style>
