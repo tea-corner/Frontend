@@ -1,10 +1,8 @@
 <template>
   <div class="nav-barANDHeromenu">
-
-
     <div class="heroMenu">
-        <nav-bar></nav-bar>
-        <hero></hero>
+        <nav-bar :balance="user.balance"></nav-bar>
+        <hero :user="user"></hero>
         <create-item></create-item>
     </div>
   </div>
@@ -20,7 +18,9 @@ export default {
         NavBar,
         Hero,
         CreateItem
-    }
+    },
+    
+    props: ['user'],
 }
 </script>
 
