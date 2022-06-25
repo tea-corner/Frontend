@@ -1,7 +1,7 @@
 <template>
         
     <div>
-        <button class="stealthButton">
+        <button class="stealthButton glitch" >
             <slot></slot>
         </button>
     </div>
@@ -42,7 +42,37 @@ export default {
     cursor: pointer;
 }
 
+.glitch:hover {
+    animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+}
 
+
+@keyframes glitch {
+	0% {
+		transform: translate(0);
+        
+	}
+	20% {
+		transform: translate(-5px, 5px);
+        
+	}
+	40% {
+		transform: translate(-5px, -5px);
+    
+	}
+	60% {
+		transform: translate(5px, 5px);
+        
+	}
+	80% {
+		transform: translate(5px, -5px);
+        
+	}
+	to {
+		transform: translate(0);
+        
+	}
+}
 
 
 
