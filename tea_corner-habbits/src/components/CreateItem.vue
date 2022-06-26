@@ -9,7 +9,7 @@
       <todo-button v-if="todoButtonVisited"></todo-button>
       <add-button v-show="addButtonVisited" @click="selectActive"></add-button>
     </div>
-    <ModalWindow v-if="isInfoPopupVisible" @closePopup="closePopupInfo" />
+    <ModalWindow v-if="isInfoPopupVisible" @closePopupInfo="closePopupInfo" />
   </div>
 </template>
 

@@ -1,40 +1,55 @@
 <template>
-  <div class="popup_wrapper" ref="popup_wrapper">
-    <div class="v-popup">
-      <div class="v-popup_header">
-        <h4>Создать привычку</h4>
-        <form action="">
-          <div class="opisanie_">
-            <label for="" class="opisanie_">Название*</label>
-            <input type="Введите название" placeholder="Введите название" class="nazvanie" />
-          </div>
-          <div class="opisanie___">
-            <label for="Описание" class="opisanie___">Описание</label>
-            <input type="text" name="Введите описание" placeholder="Введите описание" id="" class="nazvanie" />
-          </div>
-        </form>
-
-        <div class="v-popup_content">
-          <form action="">
-            <div class="opisanie_">
-              <label for="" class="opisanie_">Тип привычки*</label>
-              <input type="Введите название" placeholder="Выберете тип" class="nazvanie" />
-            </div>
-            <div class="opisanie_">
-              <label for="" class="opisanie_"> Время выполнения</label>
-              <input type="Введите название" placeholder="Укажите к-во дней" class="nazvanie" />
-            </div>
-            <div class="opisanie_">
-              <label for="" class="opisanie_">Сложность от 1 до 5</label>
-              <input type="Введите название" placeholder="Сложность" class="nazvanie" />
-            </div>
-          </form>
+  <div class="v-popup">
+    <div class="v-popup_header">
+      <h4>Создать привычку</h4>
+      <form action="">
+        <div class="opisanie_">
+          <label for="" class="opisanie_">Название*</label>
+          <input
+            type="Введите название"
+            placeholder="Введите название"
+            class="nazvanie"
+          />
         </div>
-      </div>
-    </div>
-    <div class="v-popup_footer">
-      <button class="close_modal" @click="closePopup">Close</button>
-      <button class="submit_btn">Add to cart</button>
+        <div class="opisanie___">
+          <label for="Описание" class="opisanie___">Описание</label>
+          <input
+            type="text"
+            name="Введите описание"
+            placeholder="Введите описание"
+            id=""
+            class="nazvanie"
+          />
+        </div>
+
+        <div class="opisanie_">
+          <label for="" class="opisanie_">Тип привычки*</label>
+          <input
+            type="Введите название"
+            placeholder="Выберете тип"
+            class="nazvanie"
+          />
+        </div>
+        <div class="opisanie_">
+          <label for="" class="opisanie_"> Время выполнения</label>
+          <input
+            type="Введите название"
+            placeholder="Укажите к-во дней"
+            class="nazvanie"
+          />
+        </div>
+        <div class="opisanie_">
+          <label for="" class="opisanie_">Сложность от 1 до 5</label>
+          <input
+            type="Введите название"
+            placeholder="Сложность"
+            class="nazvanie"
+          />
+        </div>
+        <div>
+        <button @click="closePopupInfo ">закрыть</button>
+        </div>
+      </form>
     </div>
   </div>
 </template>
@@ -42,22 +57,14 @@
 <script>
 export default {
   name: "ModalWindow",
-  props: {},
+
   data() {
     return {};
   },
   methods: {
-    closePopup() {
-      this.$emit("closePopup");
+    closePopupInfo() {
+      this.$emit("closePopupInfo");
     },
-  },
-  mounted() {
-    let vm = this;
-    document.addEventListener("click", function (item) {
-      if (item.target === vm.$refs["popup_wrapper"]) {
-        console.log(123);
-      }
-    });
   },
 };
 </script>
@@ -77,9 +84,7 @@ export default {
   margin-left: 30px;
   flex-direction: column;
 }
-.popup_wrapper {
-  background: rgba(64, 64, 64, 0.4);
-}
+
 .opisanie {
   margin: auto;
   width: auto;
@@ -96,8 +101,6 @@ export default {
   background-color: #00b8c4;
 }
 
-
-
 .nazvanie {
   width: 350px;
   height: 31px;
@@ -108,8 +111,6 @@ export default {
   align-items: center;
   justify-content: center;
   margin: auto;
-
-
 }
 .v-popup {
   top: 0;
@@ -127,7 +128,7 @@ export default {
   display: flex;
 
   align-items: center;
-    justify-content:space-around;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -139,9 +140,9 @@ export default {
 
 .v-popup_content {
   display: flex;
-  
-    justify-content:space-around;
-flex-direction: column;
+
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .submit_btn {
