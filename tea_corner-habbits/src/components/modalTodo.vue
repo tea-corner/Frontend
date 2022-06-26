@@ -1,7 +1,7 @@
 <template>
   <div class="v-popup">
     <div class="v-popup_header">
-      <h4>Создать привычку</h4>
+      <h4>Создать задачу</h4>
       <form action="">
         <div class="opisanie_">
           <label for="" class="opisanie_">Название*</label>
@@ -47,7 +47,7 @@
           />
         </div>
         <div>
-        <button @click="closePopupInfo " class="AYE">закрыть</button>
+        <button @click="closePopupInfoTODO " class="AYE">закрыть</button>
         </div>
       </form>
     </div>
@@ -62,8 +62,8 @@ export default {
     return {};
   },
   methods: {
-    closePopupInfo() {
-      this.$emit("closePopupInfo");
+    closePopupInfoTODO() {
+      this.$emit("closePopupInfoTODO");
     },
   },
 };
