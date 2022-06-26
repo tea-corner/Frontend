@@ -15,4 +15,9 @@ export default {};
   margin-right: 0px;
   margin-left: 20px;
 }
+
+.btnSyncIcon:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 </style>

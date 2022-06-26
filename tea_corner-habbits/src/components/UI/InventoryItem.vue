@@ -1,8 +1,8 @@
 <template>
   <div class="InventoryItem">
-    <img :src="item.imageLink" alt="" class="weaponIcon" />
+    <img :src="getImageUrl(item.name)" alt="" class="weaponIcon" />
     <div class="weaponBlock">
-      <h5 class="weaponName">{{this.item.description}}</h5>
+      <h5 class="weaponName">{{this.item.name}}</h5>
     </div>
   </div>
 </template>
@@ -11,6 +11,18 @@
 <script>
 export default {
   props: ['item'],
+
+  data() {
+    return {
+      baseUrl: "http://haits.tk/api",
+    }
+  },
+
+  methods: {
+    getImageUrl(name) {
+      return this.baseUrl + "/images/" + name + ".png";
+    },
+  }
 };
 </script>
 
@@ -46,5 +58,10 @@ export default {
     width: 100px;
     height: 90px;
 
+}
+
+.InventoryItem:hover{
+  opacity: 0.5;
+  transition: 0.7s;
 }
 </style>

@@ -3,12 +3,12 @@
     <img src="/images/image 3.png" alt="photo" class="sectionMenuPhoto" />
 
     <div class="heroInformation">
-      <h4 class="sectionHeroName">{{userName}}</h4>
+      <h4 class="sectionHeroName">{{ user.userNickname }}</h4>
 
       <div class="resourceHealth">
         <img src="/svg/health.svg" alt="healthIcon" class="healthIcon" />
-        <progress :value="health" max="50" class="progressHealth"></progress>
-        <h6 class="dataHealth">{{health}}/50</h6>
+        <progress :value="user.hp" max="50" class="progressHealth"></progress>
+        <h6 class="dataHealth">{{ user.hp }}/50</h6>
       </div>
 
       <div class="resourceExperience">
@@ -17,8 +17,12 @@
           alt="experienceIcon"
           class="experienceIcon"
         />
-        <progress :value="experiance" max="50" class="progressExperience"></progress>
-        <h6 class="dataExperience">{{experiance}}/50</h6>
+        <progress
+          :value="user.exp"
+          max="50"
+          class="progressExperience"
+        ></progress>
+        <h6 class="dataExperience">{{ user.exp }}/50</h6>
       </div>
     </div>
   </div>
@@ -26,13 +30,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      health: 0,
-      experiance: 0,
-      userName: "Danila Bozhedomchik"
-    }
-  }
+  props: ["user"],
 };
 </script>
 
@@ -47,7 +45,7 @@ export default {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .heroInformation {
@@ -121,7 +119,46 @@ export default {
 }
 
 .progressExperience::-webkit-progress-value {
-  background-color: #FCEE0A;
+  background-color: #fcee0a;
 }
 
+.sectionHeroName:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.healthIcon:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.experienceIcon:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.progressHealth:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.progressExperience:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.dataExperience:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.dataHealth:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.sectionMenuPhoto:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 </style>

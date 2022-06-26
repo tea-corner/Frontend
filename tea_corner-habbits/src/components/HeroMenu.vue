@@ -1,10 +1,8 @@
 <template>
   <div class="nav-barANDHeromenu">
-
-  
     <div class="heroMenu">
-        <nav-bar></nav-bar>
-        <hero></hero>
+        <nav-bar :balance="user.balance"></nav-bar>
+        <hero :user="user"></hero>
         <create-item></create-item>
         
     </div>
@@ -23,7 +21,10 @@ export default {
         Hero,
         CreateItem,
         ModalWindow,
-    }
+        CreateItem
+    },
+    
+    props: ['user'],
 }
 </script>
 

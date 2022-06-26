@@ -17,4 +17,8 @@ export default {
 </script>
 
 <style scoped>
+.addButton:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 </style>

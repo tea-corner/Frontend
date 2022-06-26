@@ -3,13 +3,27 @@
     <div class="container">
       <div class="leftContainer">
         <logo></logo>
-        <a href="" class="logoText" @click="$router.push('/about')"
+        <a href="" 
+        class="logoText glitch" 
+        data-glitch="Tea Corner"
+        @click="$router.push('/about')"
           >Tea Corner
           
         </a>
-        <a href="" class="navLink" @click="$router.push('/')">Главная</a>
-        <a href="" class="navLink" @click="$router.push('/login')">Данжи</a>
-        <a href="" class="navLink" @click="$router.push('/users')">Инвентарь</a>
+        <a href="" 
+        class="navLink glitch"
+        data-glitch="Главная"
+        @click="$router.push('/')"
+        >Главная</a>
+        <a href="" 
+        class="navLink glitch" 
+        data-glitch="Данжи"
+        @click="$router.push('/login')"
+        >Данжи</a>
+        <a href="" 
+        class="navLink glitch"
+        data-glitch="Инвентарь"
+        @click="$router.push('/users')">Инвентарь</a>
       </div>
 
       <div class="rightContainer">
@@ -38,11 +52,8 @@ export default {
     Profile,
   },
 
-  data() {
-    return {
-      balance: 0,
-    };
-  },
+  props: {balance: Number},
+  
 };
 </script>
 
@@ -90,6 +101,84 @@ export default {
   display: flex;
   margin-right: auto;
   margin-bottom: 0;
+}
+
+.glitch {
+  
+  
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0%, 0%);
+  text-transform: uppercase;
+  
+}
+.glitch:before, .glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.glitch:after {
+  color: #f0f;
+  z-index: -2;
+}
+.glitch:before {
+  color: #0ff;
+  z-index: -1;
+}
+.glitch:hover:before {
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
+}
+.glitch:hover:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
+}
+
+
+@-webkit-keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 </style>

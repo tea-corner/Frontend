@@ -17,6 +17,12 @@ export default {};
   margin-right: 0;
   margin-left: 20px;
 }
+
+.chatContainer:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .logoImg {
   display: flex;
   padding-right: 0;
@@ -25,5 +31,4 @@ export default {};
 .btnChatIcon {
   pointer-events: none;
 }
-
 </style>
