@@ -96,6 +96,6 @@ export default {
   flex-direction: row-reverse;
   top: 307px;
   margin-right: 30px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 </style>
