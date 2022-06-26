@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <img src="/images/image 3.png" alt="photo" class="sectionMenuPhoto" />
+    <img src="/images/sad.jpg" alt="photo" class="sectionMenuPhoto" />
 
     <div class="heroInformation">
       <h4 class="sectionHeroName">{{ user.userNickname }}</h4>
@@ -87,8 +87,8 @@ export default {
 }
 
 .sectionMenuPhoto {
-  width: 178px;
-  height: 110px;
+  width: 150px;
+  height: 130px;
 }
 
 .dataHealth {
